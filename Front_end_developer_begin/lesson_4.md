@@ -17,13 +17,13 @@
    
 1-2 分享出色和糟糕网站 [alistapart 响应式网站](https://alistapart.com/)
    
-1-3 项目简介
+1-3 项目简介 [老师个人网站响应式](https://hurtlingthrough.space/)
 
     * 改善网页响应能力练习
     * 练习没有绝对的正确的解决方案，响应式设计是一门艺术
     * 为了提高响应式设计能力,需要不断的练习
     * 课程目的培养你的响应式思维
-    * [老师个人网站响应式](https://hurtlingthrough.space/)
+
    
    
 1-4 平移、缩放、触摸、lck
@@ -70,5 +70,23 @@
 
  2-3 [练习:像素化](/image/2_2-3%20练习.png)  [答案](/image/2_2-3%20answer.png)
  
- 2-4 计算 DPR  [练习题四个图](/image/lesson_2-2-4-DRP.png) [答案](/image/lesson_2-2-4-DRP_answer.png)
-        
+ 2-4 练习计算 DPR  [练习题四个图](/image/lesson_2-2-4-DRP.png) [答案](/image/lesson_2-2-4-DRP_answer.png)
+ 
+ 2-5 练习有和差别？ [问题](/image/lesson_2-2-5-meat.png) [答案](/image/lesson_2-2-4-DRP_answer.png)
+ 
+ 2-6 练习计算CSS像素 [问题](/image/lesson_2-2-6-qustion.png) [答案](/image/lesson_2-2-6-answer.png)
+ 
+ 2-7 练习窗口的宽度如何？ [问题](/image/lesson_2-2-7-qustion.png) [答案](/image/lesson_2-2-7-answer.png)
+ 
+ 2-8 设置窗口 [Mozilla 开发者社区说明](https://developer.mozilla.org/zh-CN/docs/Mobile/Viewport_meta_tag)
+    
+    * viewport标签: 让浏览器知道我们的意图，viewport后面跟宽度，针对具体设备进行宽度调整
+    这使页面内容可以匹配不同的屏幕尺寸
+    
+    * 初始缩放：initial-scale=1 赋值1,告诉浏览器相对像素与css像素比例是1:1
+```
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+```
+ 
+ 
