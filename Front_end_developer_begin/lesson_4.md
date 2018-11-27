@@ -15,8 +15,7 @@
             * Skinny ties是一个基于Magento CMS的响应式电子商务网站
    
    
-1-2 分享出色和糟糕网站
-    * [alistapart 响应式网站](https://alistapart.com/)
+1-2 分享出色和糟糕网站 [alistapart 响应式网站](https://alistapart.com/)
    
 1-3 项目简介
 
@@ -39,7 +38,7 @@
  
  ## lesson 2 从小开始
  
- 2-1 定义窗口:课程内容
+ 2-1 定义窗口:课程内容 [显示内容区域](/image/lesson_2_1_view_port.png)
  
       页面适应不同尺寸设备，css和设备无关像素之间的不同,元素选择合适尺寸。 
      
@@ -49,9 +48,9 @@
       
       例：浏览器窗口设置为800px 宽, 可视部分也为800px宽 
       
-   [显示内容区域](/image/lesson_2_1_view_port.png)
 
- 2-2 像素、像素和更多像素！
+
+ 2-2 像素、像素和更多像素！[harware pix](/image/lesson%202_2-1%20device%20pixe%20hardware%20pix.png) [no view port](/image/lesson%202_2-1%20noviewport%202-4.png)
       
       浏览器显示: 根据DIPs宽度(device independent pixels 与设备独立像素值),
       不是根据物理硬件的像素宽带而工作。
@@ -67,12 +66,9 @@
       如果原来网页显示在宽度980dips屏幕上的，现在放在一个宽度仅有360dips的手机屏幕上，被压多了一半还多，
       浏览器会试图挑出页面中的首要内容放大，浏览器自己猜测哪些内容重要。
    
-   [harware pix](/image/lesson%202_2-1%20device%20pixe%20hardware%20pix.png)
-   [no view port](/image/lesson%202_2-1%20noviewport%202-4.png)
+
 
  2-3 [练习:像素化](/image/2_2-3%20练习.png)  [答案](/image/2_2-3%20answer.png)
  
- 2-4 计算 DPR
+ 2-4 计算 DPR  [练习题四个图](/image/lesson_2-2-4-DRP.png) [答案](/image/lesson_2-2-4-DRP_answer.png)
         
-        以下四个图中，哪个图能代表像素比为 2 的设备呢？
- [四个图](/image/lesson_2-2-4-DRP.png) [答案](/image/lesson_2-2-4-DRP_answer.png)
