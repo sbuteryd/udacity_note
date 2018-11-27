@@ -40,6 +40,8 @@
       视窗: 视窗是指浏览器能够显示内容区域
       
       例：浏览器窗口设置为800px 宽, 可视部分也为800px宽 
+ 
+[picture](/image/lesson_2_1_view_port.png)
       
       
  
