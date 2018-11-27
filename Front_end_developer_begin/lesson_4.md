@@ -62,4 +62,9 @@
    [harware pix](/image/lesson%202_2-1%20device%20pixe%20hardware%20pix.png)
    [no view port](/image/lesson%202_2-1%20noviewport%202-4.png)
 
-
+ 2-3 [练习:像素化](/image/2_2-3%20练习.png)  [答案](/image/2_2-3%20answer.png)
+ 
+ 2-4 计算 DPR
+        
+        以下四个图中，哪个图能代表像素比为 2 的设备呢？
+ [四个图](/image/lesson_2-2-4-DRP.png) [答案](/image/lesson_2-2-4-DRP_answer.png)
