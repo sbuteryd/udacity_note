@@ -1,0 +1,279 @@
+ES6 第一课基础
+	1-1 变量
+		let
+		 可以赋值
+		const
+		 不可以赋值
+	1-2 子面量
+		省 空格 省 +
+		 const information = {
+		     name:'russell',
+		     age:28,
+		     favourite:'listen',
+		     future:'font'
+		 };
+		 
+		 
+		 
+		 console.log(`My name is ${information.name}
+		 my age is: ${information.age}
+		 my favourite is ${information.favourite}
+		 my future is ${information.future}
+		 `
+		 );
+		对象
+			避免重复
+				旧
+				 let name = 'russel';
+				 let age = '28';
+				 let fist_name = 'li';
+				 
+				 
+				 
+				 let information = {
+				     name:name,
+				     age:age,
+				     fist_name:fist_name,
+				 }
+				 
+				 console.log(information)
+				新
+				 let name = 'russel';
+				 let age = '28';
+				 let fist_name = 'li';
+				 
+				 
+				 let information = {name,age,fist_name};
+				 
+				 console.log(information)
+			函数简写
+				旧
+				 let name = 'russel';
+				 let age = '28';
+				 let fist_name = 'li';
+				 
+				 
+				 
+				 let information = {
+				     name:name,
+				     age:age,
+				     fist_name:fist_name,
+				     getname:function () {
+				         return name
+				     }
+				 
+				 }
+				 
+				 console.log(information.getname());
+				新
+				 let name = 'russel';
+				 let age = '28';
+				 let fist_name = 'li';
+				 
+				 
+				 
+				 let information = {
+				     name:name,
+				     age:age,
+				     fist_name:fist_name,
+				     getname(){
+				         return name
+				     }
+				 
+				 }
+				 
+				 console.log(information.getname());
+				 
+				 
+				 
+				 1、去掉了 :号，和function。
+	1-3 解构 
+		数组
+			单个
+			 const  name = [101,102,103];
+			 
+			 const [x,y,z] = name;
+			 
+			 console.log(x,y,z)
+			忽略
+			 const  name = [101,102,103];
+			 
+			 const [x,,z] = name;
+			 
+			 console.log(x,z)
+			 
+			 这里忽略了y，
+			 
+			 
+			 
+			 
+			 Udacity example:
+			 
+			 let positions = ['Gabrielle', 'Jarrod', 'Kate', 'Fernando', 'Mike', 'Walter'];
+			 
+			 
+			 let [first, second, third] = positions;
+		对象
+			例子
+			 const information = {
+			     name:'russell',
+			     age:28,
+			     favourite:'listen',
+			     future:'font',
+			     test(){
+			        return name
+			     }
+			 };
+			 
+			 
+			 
+			 let {name,age,favourite,future,test} = information;
+			 
+			 
+			 console.log(test());
+			 
+			 
+			 Udacity example:
+			 
+			 const gemstone = {
+			   type: 'quartz',
+			   color: 'rose',
+			   karat: 21.29
+			 };
+			 
+			 const {type, color, karat} = gemstone;
+			 
+			 console.log(type, color, karat);
+			 
+			 
+			 const circle = {
+			   radius: 10,
+			   color: 'orange',
+			   getArea: function() {
+			     return Math.PI * this.radius * this.radius;
+			   },
+			   getCircumference: function() {
+			     return 2 * Math.PI * this.radius;
+			   }
+			 };
+			 
+			 let {radius, getArea, getCircumference} = circle;
+			边界
+			 1、对象内容已经保存到变量的所以不能在使用变量储存了。
+				函数
+				 const circle = {
+				   radius: 10,
+				   color: 'orange',
+				   getArea: function() {
+				     return Math.PI * this.radius * this.radius;
+				   },
+				   getCircumference: function() {
+				     return 2 * Math.PI * this.radius;
+				   }
+				 };
+				 
+				 let {radius, getArea, getCircumference} = circle;
+				 
+				 
+				 调用 getArea() 将返回 NaN。在解构该对象并将 getArea() 方法存储到 getArea 变量中时，它无法再访问 circle 对象中的 this，得出面积 NaN。
+				{}
+				 解构{}的时候要使用,{}.
+	1-4 for of
+		旧for in
+			不可以 停止
+			边界
+			 不能，当条件满足后停止。
+		可以停止 过滤
+		 const number = [1,2,3,'russell',4,5,6];
+		 
+		 
+		 for (const i of number){
+		     if(i ==='russell')break;
+		     console.log(i)
+		 }
+		边界
+			不支持 {}
+			 不支持对象{}
+	1-5 展开运算符
+	 展开运算符:就是把盒子里的东西全部拿出来
+		数组
+			合并
+				旧 concat
+				 const name = ['li','weng','xie'];
+				 const age = [18,35,28];
+				 
+				 
+				 let get_all = name.concat(age);
+				 
+				 console.log(get_all)
+				 
+				 [ 'li', 'weng', 'xie', 18, 35, 28 ]
+				 
+					边界
+					 const name = ['li','weng','xie'];
+					 const age = [18,35,28];
+					 
+					 
+					 let get_all = [name,age];
+					 
+					 console.log(get_all
+					 变成了嵌套
+					 //[ [ 'li', 'weng', 'xie' ], [ 18, 35, 28 ] ]
+					 
+				新
+					不实用concat
+					 const name = ['li','weng','xie'];
+					 const age = [18,35,28];
+					 
+					 
+					 let get_all = [...name,...age];
+					 
+					 console.log(get_all)
+					 //[ 'li', 'weng', 'xie', 18, 35, 28 ]
+	1-6 剩余参数
+	 就是把省下的东西都打包回去。
+		数组使用
+		 
+		 Example Udacity 
+		 
+		 const order = [20.17, 18.67, 1.50, "cheese", "eggs", "milk", "bread"];
+		 const [total, subtotal, tax, ...items] = order;
+		 
+		 console.log(total, subtotal, tax, items);
+		 
+		 Prints: 20.17 18.67 1.5 ["cheese", "eggs", "milk", "bread"]
+		函数使用
+			不使用
+			 function sum() {
+			   let total = 0;  
+			   for(const argument of arguments) {
+			     total += argument;
+			   }
+			   return total;
+			 }
+			 
+			 sum(1, 2);
+			 sum(10, 36, 7, 84, 90, 110);
+			 sum(-23, 3000, 575000);
+			 
+			 
+			 
+			 1、让人看不懂。
+			使用
+			 function sum(...nums) {
+			   let total = 0;  
+			   for(const num of nums) {
+			     total += num;
+			   }
+			   return total;
+			 }
+			 
+			 
+			 
+			 
+			 sum(1, 2);
+			 sum(10, 36, 7, 84, 90, 110);
+			 sum(-23, 3000, 575000);
+			 
+			 
+			 1、看参数更加清晰
