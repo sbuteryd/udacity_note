@@ -1,6 +1,7 @@
 ## Es6 脑图笔记
 
-下载mindNode人软件(ipad mac ipone 都有
+下载 mindNode 软件(ipad mac ipone ）
+
 <img src="./picture/mind.png" alt="" width="100">
 
 
