@@ -21,6 +21,7 @@ text(文件夹): mindnode text文本。
 
 
 1、es6课程 1 脑图
+2、第一课深入对象了解
 
 
 <img src="./picture/ES6 第一课基础.png" alt="" width="500">
