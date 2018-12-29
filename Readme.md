@@ -24,5 +24,5 @@ text(文件夹): mindnode text文本。
 
 2、第一课深入对象了解
 
-
+3、课程二  运行函数 
 <img src="./picture/ES6 第一课基础.png" alt="" width="500">
