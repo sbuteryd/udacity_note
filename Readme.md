@@ -20,11 +20,16 @@ text(文件夹): mindnode text文本。
 ## 课程笔记路线图(以下说明了笔记都进度)
 
 
-1、es6课程 1 脑图
 
-2、第一课深入对象了解
+1、lesson1 深入对象了解
 
-3、课程二  运行函数 
+2、lesson2 运行时的函数
+
+3、lesson3 类和对象
+
+4、lesson4 es6语法
+
+5、lesson5 es6函数
 
 
 <img src="./picture/ES6 第一课基础.png" alt="" width="500">
